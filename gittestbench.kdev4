@@ -1,0 +1,4 @@
+[Project]
+Name=gittestbench
+Manager=KDevCMakeManager
+VersionControl=kdevgit

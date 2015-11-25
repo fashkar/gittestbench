@@ -1,5 +1,9 @@
 #include <iostream>
 
+
+
+void some_func(void);
+
 int main(int argc, char **argv) {
     std::cout << "Hello, world!" << std::endl;
 
@@ -8,4 +12,9 @@ int main(int argc, char **argv) {
 
 	std::cout << "bye, world!" << std::endl;
     return 0;
+}
+
+void some_func(void)
+{
+	std::cout << __FUNCTION__ << std::endl;
 }

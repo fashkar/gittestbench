@@ -27,3 +27,8 @@ void some_func(void)
 {
 	std::cout << __FUNCTION__ << std::endl;
 }
+
+void func2()
+{
+        std::cout << __FUNCTION__ << std::endl;
+}

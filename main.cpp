@@ -1,8 +1,14 @@
 #include <iostream>
 
-
-
-void some_func(void);
+#ifdef CAPTURE_PARAMS_FROM_LRT
+    #define CLK_SYS_SPEED 500000
+#else
+    #ifdef RUN_AT_15FPS
+    #define CLK_SYS_SPEED 500000
+    #else
+    #define CLK_SYS_SPEED 500000
+    #endif
+#endif
 
 int main(int argc, char **argv) {
     std::cout << "Hello, world!" << std::endl;
